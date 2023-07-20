@@ -73,10 +73,10 @@ class HeadingElement extends MarkdownBlockElement {
 
     if (isExtentInside) return true;
 
-    final isSurrended =
+    final isSurrounded =
         (MarkdownElement.textSelection!.baseOffset <= startLine) &&
             (endLine <= MarkdownElement.textSelection!.extentOffset);
 
-    return isSurrended;
+    return isSurrounded;
   }
 }
