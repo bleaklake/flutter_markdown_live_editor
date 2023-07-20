@@ -83,11 +83,11 @@ abstract class MarkdownBlockElement extends MarkdownElement {
 
     if (isExtentInside) return true;
 
-    final isSurrended =
+    final isSurrounded =
         (MarkdownElement.textSelection!.baseOffset <= currentElement.start.offset) &&
             (currentElement.end.offset <= MarkdownElement.textSelection!.extentOffset);
 
-    return isSurrended;
+    return isSurrounded;
   }
 
   void setTextStyle();
